@@ -89,8 +89,27 @@ background: #FEFEFE;
 }
 .filter-input{
     margin-top:30px;
-    width: 100%;
+    width: 90%;
     height: auto;
     display: flex;
-    border: 1px solid red;
+    align-items: center;
+    gap: 30px;
+    font-family: 'oswald';
+    flex-wrap: wrap;
+}
+.filter-input input{
+    width: 300px;
+    border: none;
+    font-size: 15px;
+    background: transparent;
+    outline: none;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid #ccc;
+}
+.filter-input input::placeholder{
+    font-family: 'poppins';
+    font-size: 12px;
+}
+.filter-input input[type=text]{
+    width: 300px;
 }
