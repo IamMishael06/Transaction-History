@@ -27,3 +27,12 @@ function dropDown() {
     })
 }
 dropDown();
+
+// SEARCH ANIMATION
+function searchItems() {
+    filterSearch = document.querySelectorAll('.filter-input input')
+    filterSearch.forEach( inputs => {
+        console.log(inputs)
+    });
+}
+searchItems();
