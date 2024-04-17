@@ -8,6 +8,12 @@ body{
     display: flex;
     overflow-x: hidden;
 }
+.open{
+    display: none;
+}
+.mark{
+    display: none;
+}
 /* ====================== ASIDE NAV =================== */
 aside{
     position: fixed;
@@ -89,15 +95,33 @@ background: #FEFEFE;
 .filter-head i{
     margin-top: 8px;
 }
+.filter-btn{
+    color: #FEFEFE;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+.arrow{
+    transition: 0.5s;
+    transform: rotate(-180deg);
+}
+.arrow.active{
+    transform: rotate(0deg);
+}
 .filter-input{
     margin-top:30px;
     width: 90%;
-    height: auto;
+    height: 0;
+    overflow: hidden;
     display: flex;
     align-items: center;
     gap: 30px;
     font-family: 'oswald';
     flex-wrap: wrap;
+    transition: 0.5s linear;
+}
+.filter-input.active{
+    height: auto;
 }
 .filter-input input{
     width: 300px;
@@ -160,12 +184,7 @@ padding-left: 10px;
 .history-item p{
     width: 9%;
 }
-.open{
-    display: none;
-}
-.mark{
-    display: none;
-}
+
 /* ======================== MOBILE VIEW ======================== */
 @media screen and (width < 500px) {
     .open{
@@ -179,6 +198,7 @@ padding-left: 10px;
         background: #fff;
         width: 50%;
         left: -50%;
+        transition: left 0.3s ease-in;
 
     }
     .aside.active{
