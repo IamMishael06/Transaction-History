@@ -6,6 +6,7 @@ body{
     padding: 0;
     background: #F9F9F9;
     display: flex;
+    overflow-x: hidden;
 }
 /* ====================== ASIDE NAV =================== */
 aside{
@@ -60,6 +61,7 @@ main{
 .logo{
     display: flex;
     justify-content: end;
+    align-items: center;
     padding-right: 20px;
 }
 .logo h1{
@@ -157,4 +159,73 @@ padding-left: 10px;
 }
 .history-item p{
     width: 9%;
+}
+/* ======================== MOBILE VIEW ======================== */
+@media screen and (width < 350px) {
+    aside{
+        position: absolute; 
+        padding-bottom: 0;
+        height: 100vh;
+        padding-top: 20px;
+        background: #fff;
+        width: 50%;
+        left: 0;
+        left: -50%;
+
+    }
+    aside .items:nth-of-type(1){
+        margin-top: 50px;
+    }
+    .mark{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    /* =========== MAIN ===========*/
+    main{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .logo{
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 90%;
+        padding: 0;
+    }
+    .filter-section{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .filter-input{
+        margin: 0 auto;
+        margin-top: 40px;
+          width: 100%;
+    }
+    .filter-input > div{
+        width: 100%;
+    }
+    .filter-input input{
+        width: 100%;
+    }
+    .history-head{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 50px;
+        overflow: scroll;
+        padding-left: 0;
+        gap: 40px;
+    }
+    .history-item-box{
+        width: 100%;
+    }
+    .history-item{
+        width: 900px;
+    }
+    .history-item p:nth-of-type(1){
+        width: 20%;
+    }
+    .history-item p{
+        width: 10%;
+    }
+
 }
