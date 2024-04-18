@@ -196,7 +196,25 @@ padding-right: 5px;
 .history-item p{
     width: 9%;
 }
-
+.alert-msg.active{
+    top: 0;
+}
+.alert-msg{
+    width: 20%;
+    position: absolute;
+    top: -100%;
+    left: 40%;
+    height: 100px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FEFEFE;
+    font-size: 10px;
+    color:red;
+    font-family: 'roboto';
+}
 /* ======================== MOBILE VIEW ======================== */
 @media screen and (width < 500px) {
     .open{

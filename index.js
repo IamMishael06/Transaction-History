@@ -12,7 +12,12 @@ function navBar() {
     })
 }
 navBar();
-
+function showAlert() {
+    let alert = document.querySelector('.alert-msg')
+    setTimeout(() => {
+        alert.classList.add('active')
+    }, 1000);
+}
 
 // DROPDOWN ANIMATION
 function dropDown() {
@@ -168,5 +173,6 @@ function searchItems() {
         });
     });
    
+
 }
 searchItems();
