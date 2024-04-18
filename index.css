@@ -145,12 +145,20 @@ justify-content: center;
     width: 90%;
     height: 60px;
     display: flex;
-padding-left: 10px;
+padding-left:  5px;
+padding-right: 5px;
     font-family: 'quicksand';
     font-weight: 700;
     align-items: center;
-    gap: 100px;
+    gap: 40px;
     background: #8F8F90;
+}
+.history-head p:nth-of-type(1){
+    width: 12%;
+}
+.history-head p{
+    width: 9%;
+    font-size: 11px;
 }
 .history-item-box{
     width: 90%;
@@ -166,6 +174,7 @@ padding-left: 10px;
     font-family: 'poppins';
 }
 .history-item{
+ 
     width: 98%;
     margin: 0 auto;
     max-height: 100px;
@@ -177,6 +186,9 @@ padding-left: 10px;
     gap: 30px;
     padding-left: 10px;
     font-size: 12px;
+}
+.hidden{
+    display: none;
 }
 .history-item p:nth-of-type(1){
     width: 15%;
